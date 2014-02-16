@@ -1,6 +1,6 @@
 {
   "name": "kayv",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "simple offline storage",
   "main": "./index.js",
   "scripts": {
