@@ -1,0 +1,6 @@
+ui: mocha-qunit
+browsers:
+  - name: iphone
+    version: latest
+  - name: android
+    version: latest

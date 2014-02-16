@@ -1,0 +1,26 @@
+{
+  "name": "kayv",
+  "version": "0.0.0",
+  "description": "simple offline storage",
+  "main": "./index.js",
+  "scripts": {
+    "test": "zuul -- test/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/courseoff/kayv.git"
+  },
+  "keywords": [
+    "localstorage",
+    "offline"
+  ],
+  "devDependencies": {
+    "zuul": "~1.5.4"
+  },
+  "author": "Roman Shtylman <shtylman@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/courseoff/kayv/issues"
+  },
+  "homepage": "https://github.com/courseoff/kayv"
+}
