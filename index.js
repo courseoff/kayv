@@ -53,7 +53,7 @@ Db.prototype.get = function(key, cb) {
     }
 };
 
-Db.prototype.remove = function(key, val, cb) {
+Db.prototype.remove = function(key, cb) {
     var self = this;
     key = self._prefix(key);
     try {

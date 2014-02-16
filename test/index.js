@@ -65,6 +65,17 @@ test('should not have cleared other db', function(done) {
     });
 });
 
+test('should remove', function(done) {
+    db2.remove('foo', done);
+});
+
+test('remove should have worked', function(done) {
+    db2.length(function(err, length) {
+        assert.equal(length, 0);
+        done();
+    });
+});
+
 test('should save/restore objects', function(done) {
     var obj = { hello: 'world', when: 5 };
 
