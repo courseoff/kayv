@@ -44,13 +44,13 @@ Db.prototype.set = function(key, val, cb) {
 Db.prototype.get = function(key, cb) {
     var self = this;
     key = self._prefix(key);
+    var item;
     try {
-        var item = self.storage.getItem(key);
-        item = JSON.parse(item);
-        cb(null, item);
+        item = JSON.parse(self.storage.getItem(key));
     } catch (err) {
         return cb(err);
     }
+    cb(null, item);
 };
 
 Db.prototype.remove = function(key, cb) {
